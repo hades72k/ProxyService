@@ -1,25 +1,17 @@
 {
-  "name": "roblox-proxy-service",
+  "name": "ProxyService",
   "version": "1.0.0",
-  "description": "A simple proxy service for Roblox APIs",
-  "main": "index.js",
+  "description": "A simple proxy service",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "helmet": "^7.0.0"
+    "request": "^2.88.2"
   },
   "engines": {
     "node": "16.x"
-  },
-  "keywords": [
-    "roblox",
-    "proxy",
-    "api"
-  ],
-  "author": "Sentanos",
-  "license": "MIT"
+  }
 }

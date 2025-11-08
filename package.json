@@ -1,20 +1,25 @@
 {
-  "name": "ProxyService",
+  "name": "roblox-proxy-service",
   "version": "1.0.0",
-  "description": "A controller for proxying requests created for use with HttpService in Roblox.",
-  "main": "server.js",
-  "dependencies": {
-    "http-proxy": "^1.18.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sentanos/ProxyService.git"
-  },
-  "devDependencies": {},
+  "description": "A simple proxy service for Roblox APIs",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
-  "author": "Froast <froastj@gmail.com>",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [
+    "roblox",
+    "proxy",
+    "api"
+  ],
+  "author": "Sentanos",
   "license": "MIT"
 }
